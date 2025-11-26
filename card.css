@@ -1,0 +1,68 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container1 {
+  width: 55%;
+  height: 100vh;
+  background-image: linear-gradient(to right, blue, #393d7e, #412b6b);
+  /* background-color: #393d7e; */
+  overflow: hidden;
+}
+
+h1 {
+  margin: -11px 0;
+  text-align: center;
+  letter-spacing: 15px;
+  color: #ffd3d5;
+  display: inline-block;
+  margin-left: 10%;
+  text-shadow: 3px 2px grey;
+}
+
+/* string css */
+
+.string {
+  width: 2px;
+  height: 210px;
+  color: aqua;
+  display: inline-block;
+  padding: 0;
+}
+
+/* alpha for Letters */
+
+.alpha {
+  margin-left: -34px;
+  display: inline-block;
+  position: relative;
+  top: 20px;
+  /* transition: all 2s; */
+}
+
+.alpha:hover {
+  animation: shake 0.5s ease;
+  cursor: pointer;
+}
+
+@keyframes shake {
+  50% {
+    transform: translateX(5px);
+  }
+  100% {
+    transform: translateX(-5px);
+  }
+}
+
+/* decor for letters modification */
+
+.decor {
+  transform: rotate(-9deg);
+  color: aqua;
+}
+
+.decor2 {
+  transform: rotate(10deg);
+}
