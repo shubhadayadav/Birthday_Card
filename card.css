@@ -1,25 +1,41 @@
+@import url("https://cdn-uicons.flaticon.com/3.0.0/uicons-solid-rounded/css/uicons-solid-rounded.css");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+.birthday {
+  display: flex;
+}
+
 .container1 {
   width: 55%;
   height: 100vh;
   background-image: linear-gradient(to right, blue, #393d7e, #412b6b);
+  /* background-image: linear-gradient(135deg, #f97794 10%, #623aa2 100%); */
+  /* background-image: linear-gradient(135deg, #3b2667 10%, #bc78ec 100%); */
+  /* background-image: linear-gradient(135deg, #ff6fd8 10%, #3813c2 100%); */
   /* background-color: #393d7e; */
-  overflow: hidden;
+  /* overflow: auto; */
 }
 
 h1 {
-  margin: -11px 0;
+  /* margin: -11px 0; */
   text-align: center;
   letter-spacing: 15px;
   color: #ffd3d5;
   display: inline-block;
-  margin-left: 10%;
-  text-shadow: 3px 2px grey;
+  /* margin-left: 28px; */
+  margin-left: -95%;
+  text-shadow: 6px 4px 2px rgb(95, 94, 94);
+  animation: letter 3s forwards;
+}
+
+@keyframes letter {
+  100% {
+    margin-left: 28px;
+  }
 }
 
 /* string css */
@@ -65,4 +81,138 @@ h1 {
 
 .decor2 {
   transform: rotate(10deg);
+}
+
+/* cake img decor */
+
+.cake {
+  width: 60%;
+  height: 270px;
+  margin: 120px;
+  position: relative;
+  /* background-color: beige; */
+}
+
+.cake-main {
+  width: 240px;
+  height: 250px;
+  /* background-color: rgb(250, 58, 10); */
+  position: relative;
+  top: 4%;
+  left: 23%;
+  filter: drop-shadow(1px 8px 20px #969590);
+}
+
+.bottom-layer,
+.top-layer,
+.middle-layer {
+  width: 200px;
+  height: 50px;
+  position: absolute;
+  /* border-radius: 12px 12px 1px 1px; */
+  background-position: 28px 0;
+  top: 170px;
+  left: 40px;
+  background-size: 100% 100%, 60px 80px;
+  background-image: linear-gradient(transparent 25px, rgb(248, 119, 183) 55px),
+    /* background-repeat: repeat; */
+      radial-gradient(circle at 30px 1px, rgb(153, 7, 7) 31px, beige 1px);
+  z-index: 3;
+}
+
+.middle-layer {
+  transform: translateY(-50px);
+  transform: scale(0.75);
+  /* top: 170px; */
+  animation: rise 2s forwards;
+}
+
+@keyframes rise {
+  100% {
+    top: 127px;
+  }
+}
+
+.top-layer {
+  transform: translateY(-100px);
+  transform: scale(0.55);
+  /* top: 95px; */
+  animation: rise-2 4s forwards;
+}
+
+@keyframes rise-2 {
+  100% {
+    top: 94px;
+  }
+}
+
+.candale {
+  width: 9px;
+  height: 35px;
+  background-image: repeating-linear-gradient(
+    45deg,
+    #ff0000 0px,
+    #ff0000 2px,
+    #f0f0f7 5px
+  );
+  position: relative;
+  left: 58%;
+  top: 74%;
+  animation: rise-3 8s forwards;
+}
+
+@keyframes rise-3 {
+  100% {
+    top: 71px;
+  }
+}
+
+.flame {
+  width: 62px;
+  /* Adjust size as needed */
+  height: 62px;
+  border-radius: 0 50% 50% 50%;
+  background-color: #ffee44;
+  filter: drop-shadow(-15px -12px 8px #ffee44);
+  transform: scale(0.16) rotate(45deg);
+  position: relative;
+  left: -26px;
+  bottom: 37px;
+  animation: blow 3s infinite;
+}
+
+@keyframes blow {
+  50% {
+    transform: scale(0.16) rotate(40deg);
+  }
+  100% {
+    transform: scale(0.16) rotate(80deg);
+  }
+}
+
+/*Card start from  here */
+
+/* Container2 start from here */
+
+.container2 {
+  width: 55%;
+  height: 100vh;
+  background-image: linear-gradient(
+      to bottom,
+      rgb(128, 128, 128, 0.1),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url("./starry2.avif");
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* filter: hue-rotate(360deg); */
+}
+
+.card-div {
+  width: 80%;
+  height: 60%;
+  background-color: #ff0000;
+  position: relative;
+  top: 22%;
+  left: 13%;
 }
