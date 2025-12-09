@@ -1,4 +1,3 @@
-@import url("https://cdn-uicons.flaticon.com/3.0.0/uicons-solid-rounded/css/uicons-solid-rounded.css");
 @import url("https://fonts.googleapis.com/css2?family=Playwrite+NO&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 * {
   margin: 0;
@@ -13,12 +12,8 @@
 .container1 {
   width: 55%;
   height: 100vh;
-  background-image: linear-gradient(to right, blue, #393d7e, #412b6b);
-  /* background-image: linear-gradient(135deg, #f97794 10%, #623aa2 100%); */
-  /* background-image: linear-gradient(135deg, #3b2667 10%, #bc78ec 100%); */
-  /* background-image: linear-gradient(135deg, #ff6fd8 10%, #3813c2 100%); */
-  /* background-color: #393d7e; */
-  /* overflow: auto; */
+  /* background-image: linear-gradient(to right, blue, #393d7e, #412b6b); */
+  background-color: #016b61;
 }
 
 h1 {
@@ -49,14 +44,13 @@ h1 {
   padding: 0;
 }
 
-/* alpha for Letters */
+/*  for Letters */
 
 .alpha {
   margin-left: -34px;
   display: inline-block;
   position: relative;
   top: 20px;
-  /* transition: all 2s; */
 }
 
 .alpha:hover {
@@ -77,8 +71,7 @@ h1 {
 
 .decor {
   transform: rotate(-9deg);
-  color: #c1856d;
-  /* color: #ec008c; */
+  color: #d97d55;
 }
 
 .decor2 {
@@ -92,7 +85,6 @@ h1 {
   height: 270px;
   margin: 120px;
   position: relative;
-  /* background-color: beige; */
 }
 
 .cake-main {
@@ -111,7 +103,6 @@ h1 {
   width: 200px;
   height: 50px;
   position: absolute;
-  /* border-radius: 12px 12px 1px 1px; */
   background-position: 28px 0;
   top: 170px;
   left: 40px;
@@ -214,15 +205,20 @@ h1 {
   height: 60%;
   /* background-color: #ff0000; */
   position: relative;
-  top: 16%;
-  left: -2%;
+  /* top: 16%; */
+  top: 0px;
+  left: -4%;
   perspective: 1200px;
+  animation: come 1s ease forwards;
+}
+
+@keyframes come {
+  100% {
+    margin-top: 16%;
+  }
 }
 
 .main-card {
-  /* backface-visibility: hidden;
-  transform-style: preserve-3d;
-  transform-origin: left; */
   backface-visibility: hidden;
   left: -25px;
 }
@@ -290,11 +286,6 @@ h1 {
   line-height: 30px;
   font-family: "Playwrite No", sans-serif;
   word-spacing: 8px;
-}
-
-.inside-content::first-letter {
-  font-style: italic;
-  font-size: large;
 }
 
 .inside-style {
